@@ -10,16 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func fooTapped(_ sender: Any) {
+        let foo = FooViewController.instantiate()
+        show(foo, sender: self)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func barTapped(_ sender: UIButton) {
+        let bar = BarViewController.instantiate()
+        show(bar, sender: self)
     }
-
-
+    
 }
 

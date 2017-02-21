@@ -14,6 +14,11 @@
 		F44C5EDC1E5B744A00C85B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44C5EDA1E5B744A00C85B52 /* LaunchScreen.storyboard */; };
 		F44C5EE71E5B744A00C85B52 /* StoryboardAndNibInstantiationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5EE61E5B744A00C85B52 /* StoryboardAndNibInstantiationTests.swift */; };
 		F44C5EF21E5B744A00C85B52 /* StoryboardAndNibInstantiationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5EF11E5B744A00C85B52 /* StoryboardAndNibInstantiationUITests.swift */; };
+		F44C5F001E5B756900C85B52 /* StoryboardAndNibInstantiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5EFF1E5B756900C85B52 /* StoryboardAndNibInstantiation.swift */; };
+		F44C5F031E5B75B400C85B52 /* FooViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5F021E5B75B400C85B52 /* FooViewController.swift */; };
+		F44C5F051E5B75CA00C85B52 /* FooViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44C5F041E5B75CA00C85B52 /* FooViewController.storyboard */; };
+		F44C5F071E5B7B1100C85B52 /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5F061E5B7B1100C85B52 /* BarViewController.swift */; };
+		F44C5F091E5B802500C85B52 /* Various.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44C5F081E5B802500C85B52 /* Various.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		F44C5EED1E5B744A00C85B52 /* StoryboardAndNibInstantiationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardAndNibInstantiationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44C5EF11E5B744A00C85B52 /* StoryboardAndNibInstantiationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardAndNibInstantiationUITests.swift; sourceTree = "<group>"; };
 		F44C5EF31E5B744A00C85B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44C5EFF1E5B756900C85B52 /* StoryboardAndNibInstantiation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardAndNibInstantiation.swift; sourceTree = "<group>"; };
+		F44C5F021E5B75B400C85B52 /* FooViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooViewController.swift; sourceTree = "<group>"; };
+		F44C5F041E5B75CA00C85B52 /* FooViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FooViewController.storyboard; sourceTree = "<group>"; };
+		F44C5F061E5B7B1100C85B52 /* BarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
+		F44C5F081E5B802500C85B52 /* Various.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Various.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,14 @@
 		F44C5ED01E5B744A00C85B52 /* StoryboardAndNibInstantiation */ = {
 			isa = PBXGroup;
 			children = (
+				F44C5F011E5B75A100C85B52 /* Examples */,
 				F44C5ED11E5B744A00C85B52 /* AppDelegate.swift */,
 				F44C5ED31E5B744A00C85B52 /* ViewController.swift */,
 				F44C5ED51E5B744A00C85B52 /* Main.storyboard */,
 				F44C5ED81E5B744A00C85B52 /* Assets.xcassets */,
 				F44C5EDA1E5B744A00C85B52 /* LaunchScreen.storyboard */,
 				F44C5EDD1E5B744A00C85B52 /* Info.plist */,
+				F44C5EFF1E5B756900C85B52 /* StoryboardAndNibInstantiation.swift */,
 			);
 			path = StoryboardAndNibInstantiation;
 			sourceTree = "<group>";
@@ -123,6 +135,17 @@
 				F44C5EF31E5B744A00C85B52 /* Info.plist */,
 			);
 			path = StoryboardAndNibInstantiationUITests;
+			sourceTree = "<group>";
+		};
+		F44C5F011E5B75A100C85B52 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				F44C5F021E5B75B400C85B52 /* FooViewController.swift */,
+				F44C5F041E5B75CA00C85B52 /* FooViewController.storyboard */,
+				F44C5F061E5B7B1100C85B52 /* BarViewController.swift */,
+				F44C5F081E5B802500C85B52 /* Various.storyboard */,
+			);
+			name = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +260,9 @@
 			files = (
 				F44C5EDC1E5B744A00C85B52 /* LaunchScreen.storyboard in Resources */,
 				F44C5ED91E5B744A00C85B52 /* Assets.xcassets in Resources */,
+				F44C5F051E5B75CA00C85B52 /* FooViewController.storyboard in Resources */,
 				F44C5ED71E5B744A00C85B52 /* Main.storyboard in Resources */,
+				F44C5F091E5B802500C85B52 /* Various.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +288,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44C5ED41E5B744A00C85B52 /* ViewController.swift in Sources */,
+				F44C5F071E5B7B1100C85B52 /* BarViewController.swift in Sources */,
+				F44C5F031E5B75B400C85B52 /* FooViewController.swift in Sources */,
+				F44C5F001E5B756900C85B52 /* StoryboardAndNibInstantiation.swift in Sources */,
 				F44C5ED21E5B744A00C85B52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
