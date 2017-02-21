@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Foo View Controller-->
+        <!--Initial View Controller-->
         <scene sceneID="gna-4w-EEO">
             <objects>
-                <viewController id="JYg-aH-hRM" customClass="FooViewController" customModule="StoryboardAndNibInstantiation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JYg-aH-hRM" customClass="InitialViewController" customModule="StoryboardAndNibInstantiation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jqb-im-IRI"/>
                         <viewControllerLayoutGuide type="bottom" id="MtD-aB-zMB"/>
@@ -21,8 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FooViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnU-EP-ISb">
-                                <rect key="frame" x="117" y="323" width="141" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InitialViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnU-EP-ISb">
+                                <rect key="frame" x="111" y="323" width="153" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

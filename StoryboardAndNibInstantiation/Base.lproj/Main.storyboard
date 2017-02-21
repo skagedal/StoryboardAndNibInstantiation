@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Examples View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoryboardAndNibInstantiation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ExamplesViewController" customModule="StoryboardAndNibInstantiation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,26 +23,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbk-YC-NH2">
-                                <rect key="frame" x="16" y="72" width="126" height="30"/>
-                                <state key="normal" title="FooViewController"/>
+                                <rect key="frame" x="16" y="72" width="145" height="30"/>
+                                <state key="normal" title="Initial View Controller"/>
                                 <connections>
-                                    <action selector="fooTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ca-wC-KzH"/>
+                                    <action selector="initialTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kf3-ku-Vzc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSd-5r-dsx">
-                                <rect key="frame" x="16" y="110" width="124" height="30"/>
-                                <state key="normal" title="BarViewController"/>
+                                <rect key="frame" x="16" y="110" width="180" height="30"/>
+                                <state key="normal" title="Non-initial View Controller"/>
                                 <connections>
-                                    <action selector="barTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLW-bh-zoy"/>
+                                    <action selector="nonInitialTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wO9-OD-XhI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Also includes view from Nib instantation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQk-NF-Z3a">
+                                <rect key="frame" x="16" y="137" width="243" height="16"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="Vbk-YC-NH2" secondAttribute="leading" id="5b5-eX-vAB"/>
+                            <constraint firstItem="IQk-NF-Z3a" firstAttribute="top" secondItem="pSd-5r-dsx" secondAttribute="bottom" constant="-3" id="Gs2-gs-K0x"/>
                             <constraint firstItem="pSd-5r-dsx" firstAttribute="leading" secondItem="Vbk-YC-NH2" secondAttribute="leading" id="Meu-94-gxJ"/>
                             <constraint firstItem="Vbk-YC-NH2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Mie-SJ-afy"/>
                             <constraint firstItem="pSd-5r-dsx" firstAttribute="top" secondItem="Vbk-YC-NH2" secondAttribute="bottom" constant="8" id="g6v-dM-8CY"/>
+                            <constraint firstItem="IQk-NF-Z3a" firstAttribute="leading" secondItem="pSd-5r-dsx" secondAttribute="leading" id="y5C-gO-iJ3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jdL-f0-v6h"/>

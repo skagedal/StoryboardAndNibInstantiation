@@ -1,16 +1,14 @@
 //
-//  BarViewController.swift
-//  StoryboardAndNibInstantiation
-//
-//  Created by Simon Kågedal Reimer on 2017-02-20.
 //  Copyright © 2017 Simon Kågedal Reimer. All rights reserved.
 //
 
 import UIKit
 
-final class BarViewController: UIViewController, StoryboardInstantiable {
+final class NonInitialViewController: UIViewController, StoryboardInstantiable {
 
     static var storyboardName = "Various"
+    
+    // This view controller also demonstrates nib instantiation
     
     @IBOutlet var containerForNibInstantiatedView: UIView!
     
