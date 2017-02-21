@@ -19,6 +19,8 @@
 		F44C5F051E5B75CA00C85B52 /* FooViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44C5F041E5B75CA00C85B52 /* FooViewController.storyboard */; };
 		F44C5F071E5B7B1100C85B52 /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5F061E5B7B1100C85B52 /* BarViewController.swift */; };
 		F44C5F091E5B802500C85B52 /* Various.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44C5F081E5B802500C85B52 /* Various.storyboard */; };
+		F44C5F111E5C186B00C85B52 /* NibInstantiatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5F101E5C186B00C85B52 /* NibInstantiatedView.swift */; };
+		F44C5F131E5C18DB00C85B52 /* NibInstantiatedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44C5F121E5C18DB00C85B52 /* NibInstantiatedView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		F44C5F041E5B75CA00C85B52 /* FooViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FooViewController.storyboard; sourceTree = "<group>"; };
 		F44C5F061E5B7B1100C85B52 /* BarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
 		F44C5F081E5B802500C85B52 /* Various.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Various.storyboard; sourceTree = "<group>"; };
+		F44C5F101E5C186B00C85B52 /* NibInstantiatedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibInstantiatedView.swift; sourceTree = "<group>"; };
+		F44C5F121E5C18DB00C85B52 /* NibInstantiatedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibInstantiatedView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 				F44C5F041E5B75CA00C85B52 /* FooViewController.storyboard */,
 				F44C5F061E5B7B1100C85B52 /* BarViewController.swift */,
 				F44C5F081E5B802500C85B52 /* Various.storyboard */,
+				F44C5F101E5C186B00C85B52 /* NibInstantiatedView.swift */,
+				F44C5F121E5C18DB00C85B52 /* NibInstantiatedView.xib */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 				F44C5ED91E5B744A00C85B52 /* Assets.xcassets in Resources */,
 				F44C5F051E5B75CA00C85B52 /* FooViewController.storyboard in Resources */,
 				F44C5ED71E5B744A00C85B52 /* Main.storyboard in Resources */,
+				F44C5F131E5C18DB00C85B52 /* NibInstantiatedView.xib in Resources */,
 				F44C5F091E5B802500C85B52 /* Various.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44C5F111E5C186B00C85B52 /* NibInstantiatedView.swift in Sources */,
 				F44C5ED41E5B744A00C85B52 /* ViewController.swift in Sources */,
 				F44C5F071E5B7B1100C85B52 /* BarViewController.swift in Sources */,
 				F44C5F031E5B75B400C85B52 /* FooViewController.swift in Sources */,

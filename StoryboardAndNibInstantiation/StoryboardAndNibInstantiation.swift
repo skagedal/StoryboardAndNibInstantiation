@@ -20,7 +20,7 @@ extension StoryboardInstantiable {
         let storyboard = UIStoryboard(name: self.storyboardName, bundle: nil)
 
         guard let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerIdentifier) as? Self else {
-            fatalError("Expected a storyboard named \(storyboardName) with a view controller with identifier \(viewControllerIdentifier) set to class \(self)")
+            fatalError("Expected storyboard \(storyboardName) to have a view controller with identifier \(viewControllerIdentifier) of class \(self)")
         }
         return viewController
     }
@@ -41,7 +41,7 @@ extension StoryboardInitialInstantiable {
         let storyboard = UIStoryboard(name: self.storyboardName, bundle: nil)
         
         guard let viewController = storyboard.instantiateInitialViewController() as? Self else {
-            fatalError("Expected a storyboard named \(storyboardName) with an initial view controller set to class \(self)")
+            fatalError("Expected storyboard \(storyboardName) with an initial view controller of class \(self)")
         }
         return viewController
     }
@@ -50,3 +50,25 @@ extension StoryboardInitialInstantiable {
         return String(describing: self)
     }
 }
+
+protocol NibInstantiable {
+    static func instantiate() -> Self
+    static var nibName: String { get }
+}
+
+extension NibInstantiable {
+    static func instantiate() -> Self {
+        let nib = UINib(nibName: nibName, bundle: nil)
+
+        guard let object = nib.instantiate(withOwner: nil, options: nil).first as? Self else {
+            fatalError("Expected nib \(nibName) with a first object of class \(self)")
+        }
+
+        return object
+    }
+    
+    static var nibName: String {
+        return String(describing: self)
+    }
+}
+
