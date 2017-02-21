@@ -8,50 +8,45 @@
 
 import UIKit
 
-enum ViewControllerIdentifier {
-    case initial
-    case className
-    case specified(String)
-}
-
 protocol StoryboardInstantiable {
-    /**
-        Instantiates a view controller.
-     */
     static func instantiate() -> Self
     static var storyboardName: String { get }
-    static var viewControllerIdentifier: ViewControllerIdentifier { get }
+    static var viewControllerIdentifier: String { get }
 }
 
 extension StoryboardInstantiable {
     static func instantiate() -> Self {
         
-        let storyboardName = (self.storyboardName != "") ? self.storyboardName : String(describing: self)
-        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
-        
-        switch viewControllerIdentifier {
-        case .initial:
-            guard let viewController = storyboard.instantiateInitialViewController() as? Self else {
-                fatalError("Expected a storyboard named \(storyboardName) with an initial view controller set to class \(self)")
-            }
-            return viewController
+        let storyboard = UIStoryboard(name: self.storyboardName, bundle: nil)
 
-        case .className:
-            let identifier = String(describing: self)
-            guard let viewController = storyboard.instantiateViewController(withIdentifier: identifier) as? Self else {
-                fatalError("Expected a storyboard named \(storyboardName) with a view controller with identifier \(identifier) set to class \(self)")
-            }
-            return viewController
-
-        case .specified(let identifier):
-            guard let viewController = storyboard.instantiateViewController(withIdentifier: identifier) as? Self else {
-                fatalError("Expected a storyboard named \(storyboardName) with a view controller with identifier \(identifier) set to class \(self)")
-            }
-            return viewController
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerIdentifier) as? Self else {
+            fatalError("Expected a storyboard named \(storyboardName) with a view controller with identifier \(viewControllerIdentifier) set to class \(self)")
         }
+        return viewController
     }
     
-    static var storyboardName: String { return "" }
-    static var viewControllerIdentifier: ViewControllerIdentifier { return .initial }
+    static var viewControllerIdentifier: String {
+        return String(describing: self)
+    }
 }
 
+protocol StoryboardInitialInstantiable {
+    static func instantiate() -> Self
+    static var storyboardName: String { get }
+}
+
+extension StoryboardInitialInstantiable {
+    static func instantiate() -> Self {
+        
+        let storyboard = UIStoryboard(name: self.storyboardName, bundle: nil)
+        
+        guard let viewController = storyboard.instantiateInitialViewController() as? Self else {
+            fatalError("Expected a storyboard named \(storyboardName) with an initial view controller set to class \(self)")
+        }
+        return viewController
+    }
+    
+    static var storyboardName: String {
+        return String(describing: self)
+    }
+}

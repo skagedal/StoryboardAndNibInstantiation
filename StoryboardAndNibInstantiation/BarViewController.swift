@@ -11,6 +11,5 @@ import UIKit
 final class BarViewController: UIViewController, StoryboardInstantiable {
 
     static var storyboardName = "Various"
-    static var viewControllerIdentifier = ViewControllerIdentifier.className
     
 }

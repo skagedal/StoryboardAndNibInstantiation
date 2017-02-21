@@ -8,6 +8,6 @@
 
 import UIKit
 
-final class FooViewController: UIViewController, StoryboardInstantiable {
+final class FooViewController: UIViewController, StoryboardInitialInstantiable {
     
 }
