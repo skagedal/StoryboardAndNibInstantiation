@@ -80,6 +80,6 @@ If you prefer nibs for your view controllers, you probably want to use the `init
 
 ## Terms of use
 
-This rather simple code is "public domain", free to use however you want.  More detailed, see the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/). 
+This rather simple code is "public domain", free to use however you want.  For more details, see the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/). 
 
-
+Feedback is always welcome, send an e-mail to <skagedal@gmail.com>, create an issue or a pull request or send a tweet to @skagedal. 
