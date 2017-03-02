@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F40E80761E68B06E004CDD80 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40E80751E68B06E004CDD80 /* CollectionViewController.swift */; };
+		F40E80791E68B08F004CDD80 /* NibCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40E80771E68B08F004CDD80 /* NibCollectionViewCell.swift */; };
+		F40E807A1E68B08F004CDD80 /* NibCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40E80781E68B08F004CDD80 /* NibCollectionViewCell.xib */; };
+		F40E807C1E68B3AE004CDD80 /* ClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40E807B1E68B3AE004CDD80 /* ClassCollectionViewCell.swift */; };
 		F44C5ED21E5B744A00C85B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5ED11E5B744A00C85B52 /* AppDelegate.swift */; };
 		F44C5ED41E5B744A00C85B52 /* ExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5ED31E5B744A00C85B52 /* ExamplesViewController.swift */; };
 		F44C5ED71E5B744A00C85B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44C5ED51E5B744A00C85B52 /* Main.storyboard */; };
@@ -21,6 +25,10 @@
 		F44C5F091E5B802500C85B52 /* Various.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44C5F081E5B802500C85B52 /* Various.storyboard */; };
 		F44C5F111E5C186B00C85B52 /* NibInstantiatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5F101E5C186B00C85B52 /* NibInstantiatedView.swift */; };
 		F44C5F131E5C18DB00C85B52 /* NibInstantiatedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44C5F121E5C18DB00C85B52 /* NibInstantiatedView.xib */; };
+		F4CC97331E5CDA0B000550E5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC97321E5CDA0B000550E5 /* TableViewController.swift */; };
+		F4CC97361E5CDA2F000550E5 /* NibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC97341E5CDA2F000550E5 /* NibTableViewCell.swift */; };
+		F4CC97371E5CDA2F000550E5 /* NibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4CC97351E5CDA2F000550E5 /* NibTableViewCell.xib */; };
+		F4CC97391E5CDB60000550E5 /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC97381E5CDB60000550E5 /* ClassTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F40E80751E68B06E004CDD80 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		F40E80771E68B08F004CDD80 /* NibCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibCollectionViewCell.swift; sourceTree = "<group>"; };
+		F40E80781E68B08F004CDD80 /* NibCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibCollectionViewCell.xib; sourceTree = "<group>"; };
+		F40E807B1E68B3AE004CDD80 /* ClassCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassCollectionViewCell.swift; sourceTree = "<group>"; };
 		F44C5ECE1E5B744A00C85B52 /* StoryboardAndNibInstantiation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardAndNibInstantiation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44C5ED11E5B744A00C85B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F44C5ED31E5B744A00C85B52 /* ExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +73,10 @@
 		F44C5F081E5B802500C85B52 /* Various.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Various.storyboard; sourceTree = "<group>"; };
 		F44C5F101E5C186B00C85B52 /* NibInstantiatedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibInstantiatedView.swift; sourceTree = "<group>"; };
 		F44C5F121E5C18DB00C85B52 /* NibInstantiatedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibInstantiatedView.xib; sourceTree = "<group>"; };
+		F4CC97321E5CDA0B000550E5 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F4CC97341E5CDA2F000550E5 /* NibTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibTableViewCell.swift; sourceTree = "<group>"; };
+		F4CC97351E5CDA2F000550E5 /* NibTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibTableViewCell.xib; sourceTree = "<group>"; };
+		F4CC97381E5CDB60000550E5 /* ClassTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +166,14 @@
 				F44C5F081E5B802500C85B52 /* Various.storyboard */,
 				F44C5F101E5C186B00C85B52 /* NibInstantiatedView.swift */,
 				F44C5F121E5C18DB00C85B52 /* NibInstantiatedView.xib */,
+				F4CC97321E5CDA0B000550E5 /* TableViewController.swift */,
+				F4CC97341E5CDA2F000550E5 /* NibTableViewCell.swift */,
+				F4CC97351E5CDA2F000550E5 /* NibTableViewCell.xib */,
+				F4CC97381E5CDB60000550E5 /* ClassTableViewCell.swift */,
+				F40E80751E68B06E004CDD80 /* CollectionViewController.swift */,
+				F40E80771E68B08F004CDD80 /* NibCollectionViewCell.swift */,
+				F40E80781E68B08F004CDD80 /* NibCollectionViewCell.xib */,
+				F40E807B1E68B3AE004CDD80 /* ClassCollectionViewCell.swift */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -266,7 +290,9 @@
 			files = (
 				F44C5EDC1E5B744A00C85B52 /* LaunchScreen.storyboard in Resources */,
 				F44C5ED91E5B744A00C85B52 /* Assets.xcassets in Resources */,
+				F40E807A1E68B08F004CDD80 /* NibCollectionViewCell.xib in Resources */,
 				F44C5F051E5B75CA00C85B52 /* InitialViewController.storyboard in Resources */,
+				F4CC97371E5CDA2F000550E5 /* NibTableViewCell.xib in Resources */,
 				F44C5ED71E5B744A00C85B52 /* Main.storyboard in Resources */,
 				F44C5F131E5C18DB00C85B52 /* NibInstantiatedView.xib in Resources */,
 				F44C5F091E5B802500C85B52 /* Various.storyboard in Resources */,
@@ -295,11 +321,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44C5F111E5C186B00C85B52 /* NibInstantiatedView.swift in Sources */,
+				F4CC97331E5CDA0B000550E5 /* TableViewController.swift in Sources */,
+				F40E80791E68B08F004CDD80 /* NibCollectionViewCell.swift in Sources */,
 				F44C5ED41E5B744A00C85B52 /* ExamplesViewController.swift in Sources */,
 				F44C5F071E5B7B1100C85B52 /* NonInitialViewController.swift in Sources */,
+				F40E80761E68B06E004CDD80 /* CollectionViewController.swift in Sources */,
 				F44C5F031E5B75B400C85B52 /* InitialViewController.swift in Sources */,
+				F4CC97361E5CDA2F000550E5 /* NibTableViewCell.swift in Sources */,
 				F44C5F001E5B756900C85B52 /* StoryboardAndNibInstantiation.swift in Sources */,
+				F40E807C1E68B3AE004CDD80 /* ClassCollectionViewCell.swift in Sources */,
 				F44C5ED21E5B744A00C85B52 /* AppDelegate.swift in Sources */,
+				F4CC97391E5CDB60000550E5 /* ClassTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +582,7 @@
 				F44C5EF81E5B744A00C85B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F44C5EF91E5B744A00C85B52 /* Build configuration list for PBXNativeTarget "StoryboardAndNibInstantiationTests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +591,7 @@
 				F44C5EFB1E5B744A00C85B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F44C5EFC1E5B744A00C85B52 /* Build configuration list for PBXNativeTarget "StoryboardAndNibInstantiationUITests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +600,7 @@
 				F44C5EFE1E5B744A00C85B52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

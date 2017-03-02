@@ -1,5 +1,5 @@
 //
-//  Copyright © 2017 Simon Kågedal Reimer. All rights reserved.
+//  Created by Simon Kågedal Reimer in 2017.
 //
 
 import UIKit

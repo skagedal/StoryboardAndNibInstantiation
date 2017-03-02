@@ -1,9 +1,5 @@
 //
-//  ViewController.swift
-//  StoryboardAndNibInstantiation
-//
-//  Created by Simon Kågedal Reimer on 2017-02-20.
-//  Copyright © 2017 Simon Kågedal Reimer. All rights reserved.
+//  Created by Simon Kågedal Reimer in 2017.
 //
 
 import UIKit
