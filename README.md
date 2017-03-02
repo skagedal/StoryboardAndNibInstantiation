@@ -2,6 +2,8 @@
 
 This is a set of convention-based protocols and protocol extensions for Swift 3 that provides convenient and type-safe instantiation of view controllers from storyboards and views from nibs, plus registration and reuse of table view cells and collection view cells from both nibs and classes.
 
+Use it by dropping the file `StoryboardAndNibInstantiation.swift` from the example project into your own project. 
+
 ## Using conforming classes
 
 To instantiate view controllers and views:
